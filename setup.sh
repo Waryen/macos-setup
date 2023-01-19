@@ -1,12 +1,14 @@
-#!/bin/sh
+#!/bin/zsh
 
 set -e
 
 # Install homebrew 🍺
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+source ~/.zshrc
 
 # Install brew formulaes and casks ⏳
 brew install volta
+brew install deno
 brew install bun
 brew install --cask google-chrome
 brew install --cask visual-studio-code
@@ -27,5 +29,9 @@ volta install pnpm
 volta install commitizen
 volta install vercel
 volta install expo-cli
+
+# Install Sdkman ☕️
+curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 # All done ✅
