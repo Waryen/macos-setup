@@ -2,14 +2,18 @@
 
 set -e
 
+# Install Oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+source ~/.zshrc
+
 # Install homebrew 🍺
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 source ~/.zshrc
 
 # Install brew formulaes and casks ⏳
 brew install volta
-brew install deno
-brew install bun
+brew install zsh-syntax-highlighting
+brew install zsh-autosuggestions
 brew install --cask google-chrome
 brew install --cask visual-studio-code
 brew install --cask 1password
@@ -18,20 +22,11 @@ brew install --cask discord
 brew install --cask warp
 brew install --cask rectangle
 brew install --cask spotify
-brew install --cask readdle-spark
-brew install --cask deepl
 source ~/.zshrc
 
 # Install volta toolchains ⚡️
 volta install node
-volta install yarn
-volta install pnpm
 volta install commitizen
-volta install vercel
-volta install expo-cli
 
-# Install Sdkman ☕️
-curl -s "https://get.sdkman.io" | bash
-source "$HOME/.sdkman/bin/sdkman-init.sh"
-
+source ~/.zshrc
 # All done ✅
