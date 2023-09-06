@@ -14,6 +14,7 @@ brew install git
 brew tap oven-sh/bun
 brew install bun
 brew install docker
+brew install cocoapods
 brew install --cask google-chrome
 brew install --cask visual-studio-code
 brew install --cask 1password
