@@ -9,7 +9,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Install brew formulas and casks 🍺
-brew install mas
 brew install git
 brew tap oven-sh/bun
 brew install bun
@@ -25,6 +24,7 @@ brew install --cask rectangle
 brew install --cask spotify
 brew install --cask telegram
 brew install --cask raycast
+brew install --cask xcodes
 
 # Install Volta ⚡️
 curl https://get.volta.sh | bash
@@ -47,9 +47,6 @@ volta install turbo
 # Set global Git config
 git config --global user.name "Waryen"
 git config --global user.email "jonathangomand@gmail.com"
-
-# Install Xcode from the Mac App Store
-mas install 497799835  # Xcode (this requires the 'mas' command-line tool, available on the Mac App Store)
 
 # Source zshrc at the end
 source ~/.zshrc
