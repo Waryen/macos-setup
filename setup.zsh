@@ -20,7 +20,8 @@ brew install --cask visual-studio-code \
   warp \
   rectangle \
   spotify \
-  raycast
+  raycast \
+  brave-browser
 
 # Install Volta ⚡️
 curl https://get.volta.sh | bash
