@@ -9,10 +9,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Install brew formulas and casks 🍺
-brew install rbenv \
-  ruby-build \
-  cocoapods \
-  docker \
+brew install docker \
   bun \
   git
 brew install --cask visual-studio-code \
