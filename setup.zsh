@@ -13,7 +13,6 @@ brew install docker \
   bun \
   git
 brew install --cask visual-studio-code \
-  google-chrome \
   1password \
   raycast \
   discord \
