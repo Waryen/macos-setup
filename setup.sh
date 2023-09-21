@@ -23,8 +23,7 @@ brew install --cask visual-studio-code \
   warp \
   rectangle \
   spotify \
-  raycast \
-  xcodesorg/made/xcodes
+  raycast
 
 # Install Volta ⚡️
 curl https://get.volta.sh | bash
