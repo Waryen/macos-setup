@@ -1,3 +1,3 @@
-# OSX setup script
+# MacOS setup script
 
-Simple script to install everything I need to get started on an OSX system
+Simple script to install everything I need to get started on a MacOS
