@@ -20,7 +20,8 @@ brew install --cask visual-studio-code \
   rectangle \
   spotify \
   raycast \
-  firefox
+  firefox \
+  arduino-ide
 
 # Install Volta ⚡️
 curl https://get.volta.sh | bash
