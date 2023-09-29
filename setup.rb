@@ -10,7 +10,7 @@ unless system('which brew')
 end
 
 # List of brew packages and casks to install
-brew_packages = %w[docker bun git]
+brew_packages = %w[bun git]
 cask_packages = %w[visual-studio-code 1password raycast discord warp rectangle spotify google-chrome arduino-ide]
 
 # Install brew packages
