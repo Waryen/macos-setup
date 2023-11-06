@@ -1,12 +1,13 @@
-# MacOS setup script
+# macOS setup script
 
-Simple script to install everything I need to get started on a MacOS
+Simple scripts to install everything I need to get started on macOS
 
 ## Getting started
 
 - Have ruby installed, recent versions of macOS are shipped with ruby
-- Give exec permission to the script and run it, you will need privilege access
+- Give exec permission to the scripts and run them in the correct order, you will need privilege access
 - ```bash
-  chmod +x ./setup.rb && ./setup.rb
+    chmod +x ./setup1.rb && ruby ./setup1.rb
+    chmod +x ./setup2.rb && ruby ./setup2.rb
   ```
-Done!
+  Done!
