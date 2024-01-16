@@ -55,9 +55,6 @@ unless system('git config --global user.email "jonathangomand@gmail.com"')
   exit(1)
 end
 
-# Write changes to ~/.zshrc
-File.write(File.expand_path("~/.zshrc"), 'eval "$(rbenv init - zsh)"')
-
 system('source ~/.zshrc')
 
 puts 'All done ✅'
