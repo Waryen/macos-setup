@@ -1,5 +1,22 @@
 #!/usr/bin/ruby
 
+# Install Oh-My-Zsh
+unless system('which zsh')
+  puts 'Installing Oh-My-Zsh 🐚...'
+  unless system('sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"')
+    puts 'Error: Oh-My-Zsh installation failed.'
+    exit(1)
+  end
+end
+
+# Copy .zshrc configuration
+puts 'Configuring .zshrc...'
+system('rm ~/.zshrc')
+unless system('cp .zshrc.copy ~/.zshrc')
+  puts 'Error: .zshrc configuration failed.'
+  exit(1)
+end
+
 # Check if Homebrew is installed, if not, install it
 unless system('which brew')
   puts 'Installing Homebrew 🍺...'
@@ -43,6 +60,21 @@ end
 
 # Set commitizen config globally
 File.write(File.expand_path("~/.czrc"), '{ "path": "cz-conventional-changelog" }')
+
+# Install Sdkman
+unless system('which sdk')
+  puts 'Installing Sdkman 📦...'
+  unless system('curl -s "https://get.sdkman.io" | bash')
+    puts 'Error: Sdkman installation failed.'
+    exit(1)
+  end
+end
+
+# Install Java 17
+unless system('sdk install java 17.0.9-zulu')
+  puts 'Error: Java 17 installation failed.'
+  exit(1)
+end
 
 # Set global Git config
 puts 'Configuring Git...'
